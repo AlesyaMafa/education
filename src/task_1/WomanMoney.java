@@ -2,7 +2,7 @@ package task_1;
 
 public class WomanMoney extends Woman {
 
-    public String phrase = "where is the money !?";
+    private String phrase = "where is the money!?";
 
     public WomanMoney(String name) {
         super(name);

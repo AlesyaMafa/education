@@ -2,7 +2,7 @@ package task_1;
 
 public class WomanBoobs extends Woman{
 
-    public String phrase = "(.)(.)";
+    private String phrase = "(.)(.)";
 
     public WomanBoobs(String name) {
         super(name);

@@ -2,7 +2,7 @@ package task_1;
 
 public class WomanResentment extends Woman{
 
-    public String phrase = "I was offended";
+    private String phrase = "I was offended :(";
 
     public WomanResentment(String name) {
         super(name);
