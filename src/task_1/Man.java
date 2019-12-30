@@ -1,17 +1,24 @@
 package task_1;
 
-public abstract class Man {
+public class Man extends Human {
 
-    protected String name;
-    private String phrase = "I'm a man!";
+    private int lenght;
 
-    public Man(String name) {
-        this.name = name;
+    public Man(String name, int height, int weight, String phrase, String prefer, int lenght, String hi) {
+        super(name, height, weight, phrase, prefer,hi);
+        this.lenght = lenght;
     }
 
-    public void say (){
-            System.out.println(this.name + " says: " + this.phrase);
+    public int getLenght() {
+        return lenght;
     }
 
-    public abstract void prefer();
+    public void setLenght(int manSize) {
+        this.lenght = lenght;
+    }
+
+    @Override
+    public void parameters() {
+        System.out.println("weight: " + getWeight() + " / hieght: " + getHeight() + " / penis lenght: " + getLenght());
+    }
 }
