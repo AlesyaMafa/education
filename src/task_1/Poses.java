@@ -2,44 +2,44 @@ package task_1;
 
 public class Poses {
 
-    private String poseName;
-    private String howToDoIt;
-    private String why;
+    private String Name;
+    private String Description;
+    private String Profit;
 
-    public Poses(String poseName, String howToDoIt, String why){
-        this.poseName = poseName;
-        this.howToDoIt = howToDoIt;
-        this.why = why;
+    public Poses(String Name, String Description, String Profit){
+        this.Name = Name;
+        this.Description = Description;
+        this.Profit = Profit;
     }
 
-    public void setPoseName(String poseName) {
-        this.poseName = poseName;
+    public void setPoseName(String Name) {
+        this.Name = Name;
     }
 
-    public String getPoseName() {
-        return poseName;
+    public String getName() {
+        return Name;
     }
 
-    public void setHowToDoIt(String howToDoIt) {
-        this.howToDoIt = howToDoIt;
+    public void setDescription(String Description) {
+        this.Description = Description;
     }
 
-    public String getHowToDoIt() {
-        return howToDoIt;
+    public String getDescription() {
+        return Description;
     }
 
-    public void setWhy(String why) {
-        this.why = why;
+    public void setProfit(String Profit) {
+        this.Profit = Profit;
     }
 
-    public String getWhy() {
-        return why;
+    public String getProfit() {
+        return Profit;
     }
 
     public void descrOutput () {
-        System.out.println(getPoseName());
-        System.out.println("How To Do It: " + getHowToDoIt());
-        System.out.println("Why: " + getWhy());
+        System.out.println(getName());
+        System.out.println("How To Do It: " + getDescription());
+        System.out.println("Why: " + getProfit());
     }
 
 }

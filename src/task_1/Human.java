@@ -1,21 +1,19 @@
 package task_1;
 
-public abstract class Human implements Welcome {
+public abstract class Human {
 
     private String name;
     private int height;
     private int weight;
     private String phrase;
     private String prefer;
-    private String hi;
 
-    public Human(String name, int height, int weight, String phrase, String prefer, String hi) {
+    public Human(String name, int height, int weight, String phrase, String prefer) {
         this.name = name;
         this.height = height;
         this.weight = weight;
         this.phrase = phrase;
         this.prefer = prefer;
-        this.hi = hi;
     }
 
     public String getName() {
@@ -30,7 +28,7 @@ public abstract class Human implements Welcome {
         return height;
     }
 
-    public void setName(int height) {
+    public void setHeight(int height) {
         this.height = height;
     }
 
@@ -62,21 +60,6 @@ public abstract class Human implements Welcome {
         return phrase;
     }
 
-    public void setHi(String phrase) {
-        this.hi = hi;
-    }
-
     public abstract void parameters ();
 
-    public void say () {
-        System.out.println(getName() + " says: " + getPhrase());
-    }
-
-    public void prefer() {
-        System.out.println("I like " + getPrefer());
-    }
-
-    public void greeting() {
-        System.out.println("I am " + getName() + "." + getHi());
-    }
 }
