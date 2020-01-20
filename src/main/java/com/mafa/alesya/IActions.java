@@ -1,6 +1,6 @@
-package task_1;
+package com.mafa.alesya;
 
-public interface Actions {
+public interface IActions {
 
     public void say(Human human);
 

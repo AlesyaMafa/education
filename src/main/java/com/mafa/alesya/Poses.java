@@ -1,4 +1,4 @@
-package task_1;
+package com.mafa.alesya;
 
 public class Poses {
 

@@ -1,6 +1,6 @@
-package task_1;
+package com.mafa.alesya;
 
-public class HumanActions implements Actions  {
+public class HumanActions implements IActions  {
     @Override
     public void say(Human human) {
         System.out.println(human.getName() + " says: " + human.getPhrase());
