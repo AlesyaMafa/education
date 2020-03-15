@@ -9,13 +9,15 @@ import java.util.List;
 
 public class PeopleRepositoryTxt implements IPeopleRepository {
 
+
     @Override
     public List<Human> loadPeople()  {
         
         FileInputStream fstream = null;
         ArrayList<Human> people = new ArrayList<Human>();
         try {
-            fstream = new FileInputStream("src/main/resources/People.txt");
+
+            fstream = new FileInputStream("src/main/resources/people_en.txt");
             BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
             String strLine;
             String[] tokens;

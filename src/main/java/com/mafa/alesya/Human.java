@@ -56,10 +56,6 @@ public abstract class Human {
         this.phrase = phrase;
     }
 
-    public String getHi() {
-        return phrase;
-    }
-
     public abstract void parameters ();
 
 }

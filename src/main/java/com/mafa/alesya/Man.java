@@ -13,7 +13,7 @@ public class Man extends Human {
         return lenght;
     }
 
-    public void setLenght(int manSize) {
+    public void setLenght(int lenght) {
         this.lenght = lenght;
     }
 

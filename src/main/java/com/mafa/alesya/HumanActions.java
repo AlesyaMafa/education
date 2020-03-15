@@ -13,6 +13,6 @@ public class HumanActions implements IActions  {
 
     @Override
     public void greeting(Human human) {
-        System.out.println("I am " + human.getName() + "." + human.getHi());
+        System.out.println("Hi, " + human.getName());
     }
 }

@@ -13,8 +13,8 @@ public class Woman extends Human{
         return Size;
     }
 
-    public void setWomanSize(int womanSize) {
-        this.Size = womanSize;
+    public void setWomanSize(int Size) {
+        this.Size = Size;
     }
 
     @Override

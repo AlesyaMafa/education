@@ -1,14 +1,10 @@
 package com.mafa.alesya;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PoseRepozitoryTxt implements IPoseRepository {
-
+public class PoseRepositoryTxt implements IPoseRepository {
 
     @Override
     public List<Poses> loadPoses() {
@@ -17,7 +13,7 @@ public class PoseRepozitoryTxt implements IPoseRepository {
         FileInputStream fstream = null;
         BufferedReader br = null;
         try {
-            fstream = new FileInputStream("src/main/resources/Poses.txt");
+            fstream = new FileInputStream("src/main/resources/poses_en.txt");
             br = new BufferedReader(new InputStreamReader(fstream));
             String strLine;
             String[] tokens;

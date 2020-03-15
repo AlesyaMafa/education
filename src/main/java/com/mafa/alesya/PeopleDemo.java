@@ -5,14 +5,15 @@ import java.util.Scanner;
 
 public class PeopleDemo {
 
-    
     public static void main(String[] args) {
         Boolean flag = false;
         Scanner in = new Scanner(System.in);
         IActions humanAction = new HumanActions();
         ResourceService resourceService = new ResourceService();
         GameResource gameResources = resourceService.loadResources();
+
         while (true) {
+
             System.out.print("Input a name or a pose, 'exit' to stop: ");
             String num = in.next();
 
