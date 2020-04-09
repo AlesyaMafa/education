@@ -1,17 +1,21 @@
 package com.mafa.pet;
 
+import java.util.UUID;
+
 public class Pet {
 
     private String name;
     private String breed;
     private byte age;
     private String color;
+    private UUID petId;
 
-    public Pet(String name, String breed, byte age, String color){
+    public Pet(UUID petId, String name, String breed, byte age, String color){
         this.name = name;
         this.breed = breed;
         this.age = age;
         this.color = color;
+        this.petId = petId;
     }
 
     public Pet() {
@@ -49,8 +53,16 @@ public class Pet {
         this.color = color;
     }
 
+    public UUID getPetId() {
+        return petId;
+    }
+
+    public void setPetId(UUID petId) {
+        this.petId = petId;
+    }
+
     @Override
     public String toString() {
-        return String.format(getName() + ", " + getBreed() + ", " + String.valueOf(getAge()) + ", " +  getColor());
+        return String.format(getPetId() + ", " + getName() + ", " + getBreed() + ", " + String.valueOf(getAge()) + ", " +  getColor());
     }
  }

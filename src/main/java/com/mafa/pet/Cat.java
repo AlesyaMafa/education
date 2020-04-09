@@ -1,16 +1,18 @@
 package com.mafa.pet;
 
+import java.util.UUID;
+
 public class Cat extends Pet {
 
     private String hair;
 
-    public Cat(String name, String breed, byte age, String color, String hair) {
-        super(name, breed, age, color);
+    public Cat(UUID petId, String name, String breed, byte age, String color, String hair) {
+        super(petId, name, breed, age, color);
         this.hair = hair;
     }
 
     public Cat(Pet pet) {
-        super(pet.getName(), pet.getBreed(), pet.getAge(), pet.getColor());
+        super(pet.getPetId(), pet.getName(), pet.getBreed(), pet.getAge(), pet.getColor());
     }
 
     public String getHair () {
@@ -22,6 +24,6 @@ public class Cat extends Pet {
     }
 
     public String toString() {
-        return String.format("cat" + ", " + getName() + ", " + getBreed() + ", " + String.valueOf(getAge()) + ", " +  getColor() + ", " + getHair());
+        return String.format(getPetId() + ", " + "cat" + ", " + getName() + ", " + getBreed() + ", " + getAge() + ", " +  getColor() + ", " + getHair());
     }
 }
