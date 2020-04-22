@@ -6,7 +6,6 @@ import java.util.UUID;
 
 public class OperationInterface implements IOperationInterface {
 
-    private ArrayList<Pet> storage = new ArrayList<>();
     private final static String NAME = "Input name: ";
     private final static String BREED = "Input breed: ";
     private final static String AGE = "Input age: ";
@@ -15,12 +14,12 @@ public class OperationInterface implements IOperationInterface {
     private final static String HORSESHOE = "Input horseshoe: ";
     private final static String TAIL = "Input tail: ";
 
+    private ArrayList<Pet> storage = new ArrayList<>();
     private Scanner scanner;
 
     @Override
     public Pet addPet() {
         Pet pet = new Pet();
-
         System.out.println(NAME);
         pet.setName(scanner.nextLine());
         System.out.println(BREED);
@@ -53,7 +52,6 @@ public class OperationInterface implements IOperationInterface {
         for (Pet object: storage) {
             System.out.println(object);
         }
-
     }
 
     @Override
@@ -98,12 +96,10 @@ public class OperationInterface implements IOperationInterface {
         this.scanner = scanner;
     }
 
-
     private Cat createCat() {
         Cat cat = new Cat(addPet());
         System.out.println(HAIR);
         cat.setHair(scanner.nextLine());
-
         return cat;
     }
 
@@ -111,7 +107,6 @@ public class OperationInterface implements IOperationInterface {
         Horse horse = new Horse(addPet());
         System.out.println(HORSESHOE);
         horse.setHorseshoe(scanner.nextLine());
-
         return horse;
     }
 
@@ -119,8 +114,6 @@ public class OperationInterface implements IOperationInterface {
         Dog dog = new Dog(addPet());
         System.out.println(TAIL);
         dog.setTail(scanner.nextLine());
-
         return dog;
     }
-
 }

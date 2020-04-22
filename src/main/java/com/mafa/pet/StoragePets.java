@@ -3,9 +3,8 @@ package com.mafa.pet;
 public class StoragePets {
 
     public static void main(String[] args) {
-        MainInterface run = new MainInterface();
+        MainInterface mainInterface = new MainInterface();
 
-        run.run();
-
+        mainInterface.run();
     }
 }
